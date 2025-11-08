@@ -19,7 +19,7 @@ func main() {
 	}
 
 	inChan := make(chan int)
-	wg := sync.WaitGroup{}
+	var wg sync.WaitGroup
 
 	for i := 0; i < workersCount; i++ {
 		wg.Add(1)
